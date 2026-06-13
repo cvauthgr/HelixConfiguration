@@ -1,6 +1,6 @@
 [language-server.clangd]
 command = "clangd"
-args = ['--query-driver=C:\ProgramData\mingw64\mingw64\bin\*']
+args = ['--query-driver=/usr/bin/gcc,/usr/bin/g++']
 
 [language-server.pylsp]
 command = "pylsp"
