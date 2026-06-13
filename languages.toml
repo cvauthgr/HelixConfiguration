@@ -1,0 +1,30 @@
+[language-server.clangd]
+command = "clangd"
+args = ['--query-driver=C:\ProgramData\mingw64\mingw64\bin\*']
+
+[language-server.pylsp]
+command = "pylsp"
+
+[[language]]
+name = "c"
+language-servers = ["clangd"]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "cpp"
+language-servers = ["clangd"]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "cuda"
+scope = "source.cuda"
+file-types = ["cu", "cuh"]
+roots = []
+comment-token = "//"
+language-servers = ["clangd"]
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "python"
+language-servers = ["pylsp"]
+indent = { tab-width = 4, unit = "    " }

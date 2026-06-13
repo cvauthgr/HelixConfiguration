@@ -1,0 +1,18 @@
+theme = "ashen"
+
+[editor]
+line-number = "absolute"
+mouse = true
+auto-save = true
+color-modes = true
+bufferline = "multiple"
+scrolloff = 8
+auto-format = false
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[editor.soft-wrap]
+enable = false
